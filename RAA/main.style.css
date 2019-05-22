@@ -1,0 +1,87 @@
+.mainpage{
+    display: grid;
+}
+
+/* START: Forsiden + Alle tilhørende elementer */
+.grid-container-1{
+    display: grid;
+    height: auto;
+background: radial-gradient(#eadfd7, #343432);
+}
+
+/* RAA logo */
+.logo{
+    max-width: 35%;
+  height: auto;
+  float: right;
+  margin-top: 5%;
+  margin-right: 5%;
+}
+
+/* Forside overskrift */
+.headline1{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tag med knappen. Scroller automatisk videre på siden, via JS */
+.item3{
+    
+}
+
+.scrollknap{
+    display: block;
+    margin:auto;
+    max-width: 60%;
+
+}
+
+/* Grafik: hvid sky element */
+.clouds {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+  }
+  
+  .initialCloud {
+    position: absolute;
+    left: 100%;
+    top: 150px;
+    animation: moveFirst 5s linear .2s;
+    animation-iteration-count: 1;
+    width: 150px;
+  }
+  
+  .firstCloud {
+    position: absolute;
+    left: -30%;
+    top: 150px;
+    animation: move 5s linear 5s infinite;
+    width: 150px;
+  }
+  
+
+
+ 
+
+
+  @-webkit-keyframes move {
+    from {
+      left: -30%;
+    }
+    to {
+      left: 100%;
+    }
+  }
+  
+  @-webkit-keyframes moveFirst {
+    from {
+      left: 50%;
+    }
+    to {
+      left: 100%;
+    }
+  }
